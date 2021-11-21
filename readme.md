@@ -49,13 +49,13 @@ Due to current state of limitation to the already past EOL Python 2.7, the follo
 Get the source code
 
 ```
-$ git clone http://github.com/em-er-es/mask-pattern
+$ git clone https://github.com/em-er-es/mask-pattern
 ```
 
 For running the script on Docker use the overlay repository inside `mask-pattern`
 
 ```
-$ git clone http://github.com/em-er-es/devops
+$ git clone https://github.com/em-er-es/devops
 ```
 
 ## Running
@@ -83,7 +83,7 @@ $ printf ${PATH//:/'\n'} | grep local
 /usr/local/sbin
 /usr/local/bin
 
-$ install -m 750 mask.py "$HOME/.local/mask"
+$ install -m 750 mask.py "$HOME/.local/bin/mask"
 ```
 
 If your `$PATH` does not hold `~/.local/bin`, you can expand it in your `~/.profile`/`~/.bashrc` or equivalent via `export PATH="${HOME}/.local/bin:${PATH}"`. This will prioritize local user path over the system ones.
